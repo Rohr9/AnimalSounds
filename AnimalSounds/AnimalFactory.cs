@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AnimalSounds
+﻿namespace AnimalSounds
 {
     public static class AnimalFactory
     {
-        public static Animals CreateAnimal(enmAnimals animalType, string name) 
+        public static Animals CreateAnimal(enmAnimals animalType, string name)
         {
             switch (animalType)
             {
@@ -26,18 +20,18 @@ namespace AnimalSounds
             };
         }
 
-        public static Animals CreateAnimal(enmAnimals animalType) 
+        public static Animals CreateAnimal(enmAnimals animalType)
         {
             switch (animalType)
             {
                 case enmAnimals.Cat:
-                    return new Cat("Cat");
+                    return new Cat("Katniss");
 
                 case enmAnimals.Dog:
-                    return new Dog("Dog");
+                    return new Dog("Doggie");
 
                 case enmAnimals.Sheep:
-                    return new Sheep("Sheep");
+                    return new Sheep("Laura");
                 default:
                     throw new ArgumentException("Unknown animal");
 

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Media;
 
 namespace AnimalSounds
 {
@@ -13,6 +9,11 @@ namespace AnimalSounds
         public override void MakeSound()
         {
             Console.WriteLine("Baaah");
+            using (SoundPlayer sound = new SoundPlayer("C:\\Users\\Tec\\source\\repos\\AnimalSounds\\AnimalSounds\\Sounds\\sheep.wav"))
+            {
+                sound.Load();
+                sound.PlaySync();
+            }
         }
     }
 }
