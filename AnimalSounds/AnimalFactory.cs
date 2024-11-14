@@ -40,4 +40,4 @@
     }
 }
 
-//Switch casae for each animal?
+//Switch case for hver?
